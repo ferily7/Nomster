@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'kaminari'
+
 gem 'carrierwave'
 
 gem "figaro", ">= 1.0.0"
