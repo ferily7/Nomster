@@ -8,5 +8,8 @@ class User < ActiveRecord::Base
   has_many :address
   has_many :description
   has_many :comments
+  has_many :photos
+
+  # mount_uploader :picture, PictureUploader
 
 end
