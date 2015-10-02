@@ -31,8 +31,6 @@ function initMap() {
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
-
-<div id="map"></div>
 <% end %>
 
 <br />
@@ -106,6 +104,7 @@ function initMap() {
 
 	      	<div class="modal-body">
 		  	  <%= f.input :caption %>
+		  	  <%= f.input :picture %>
 		  	</div>
 		  	<div class="modal-footer">
 		  	  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
