@@ -126,14 +126,13 @@ function initMap() {
 	</div>
 
 	<div class="clear"></div>
-	<% @place.photos.each do |comment| %>
+	<% @place.photos.each do |photo| %>
 	  <div class="col-xs-12 col-sm-6">
 	    <blockquote>
-	      <% if comment.humanized_rating.present? %>
-	        <b><%= comment.humanized_rating %></b> -
+	      <% if photo.caption.present? %>
+	        <b><%= photo.caption %></b> -
 	      <% end %>
-	      <%= comment.message %>
-	      <small><%= comment.user.email %></small>
+	      <small><%= photo.user.email %></small>
 	    </blockquote>
 	  </div>
 	<% end %>
